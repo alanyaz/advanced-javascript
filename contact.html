@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact - Social Yearbook</title>
+		<style>
+				nav {
+						background-color: #4CAF50;
+				}
+
+				img {
+						max-width: 100%;
+						height: auto;
+				}
+		</style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-moment.html">Add Moment</a></li>
+                <li><a href="my-arts.html">My Arts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Form Section -->
+    <main>
+        <h1 style="color: #333;">Contact Us</h1>
+        <p>Have questions or feedback? Reach out to us!</p>
+
+        <!-- Contact Form -->
+        <form id="contact-form">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+						
+						<label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="general">General Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="support">Technical Support</option>
+            </select>
+						
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p style="text-align:center;">Contact us: socialyearbook@example.com</p>
+    </footer>
+</body>
+</html>
