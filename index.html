@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Social Yearbook</title>
+		<style>
+				nav {
+						background-color: #4CAF50;
+				}
+
+				img {
+						max-width: 100%;
+						height: auto;
+				}
+		</style>
+</head>
+<body>
+    <!-- Page 1: Home -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-moment.html">Add Moment</a></li>
+                <li><a href="my-arts.html">My Arts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 style="color: #333;">Welcome to Social Yearbook</h1>
+        <p id="subline">Explore and cherish your lifetime memories in one place.</p>
+        
+        <!-- Timeline Section -->
+        <section class="timeline">
+            <div class="moment">
+                <img src="moment1.jpg" alt="Moment 1">
+                <div class="moment-info">
+                    <p class="moment-date">June 2020</p>
+                    <p class="moment-description">Graduation Day - A proud achievement!</p>
+                </div>
+            </div>
+            <div class="moment">
+                <img src="moment2.jpg" alt="Moment 2">
+                <div class="moment-info">
+                    <p class="moment-date">August 2019</p>
+                    <p class="moment-description">Travel Adventure - Exploring new horizons.</p>
+                </div>
+            </div>
+            <!-- Add more moments as needed -->
+        </section>
+
+        <!-- Add the rest of your content -->
+        
+        <a href="add-moment.html" class="cta-button">Add Your Moment</a>
+				
+				<h2>Search Dogs by Breed</h2>
+				<select id="breedSelect"	style="width: 300px;"></select>
+				<div id="allimages">
+					
+				</div>
+    </main>
+
+    <footer>
+        <p style="text-align:center;">Contact us: socialyearbook@example.com</p>
+    </footer>
+		
+		<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
