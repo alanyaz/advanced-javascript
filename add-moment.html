@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Add Moment - Social Yearbook</title>
+		<style>
+				nav {
+						background-color: #4CAF50;
+				}
+
+				img {
+						max-width: 100%;
+						height: auto;
+				}
+				td.highlight{
+					color:red;
+				}
+		</style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-moment.html">Add Moment</a></li>
+                <li><a href="my-arts.html">My Arts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Form Section -->
+    <main>
+        <h1 style="color: #333;">Add Your Moment</h1>
+        
+        <!-- Form 1: Add Basic Details -->
+        <form class="moment-form" id="momentform">
+            <label for="momentTitle">Title:</label>
+            <input type="text" id="momentTitle" name="momentTitle" required>
+
+            <label for="momentDate">Date:</label>
+            <input type="date" id="momentDate" name="momentDate" required>
+
+            <label for="momentDescription">Description:</label>
+            <textarea id="momentDescription" name="momentDescription" required></textarea>
+
+            <button type="submit">Add Moment</button>
+        </form>
+
+        <!-- Form 2: Upload Photo -->
+        <form class="moment-form">
+            <label for="momentPhoto">Upload Photo:</label>
+            <input type="file" id="momentPhoto" name="momentPhoto" accept="image/*" required>
+
+            <button type="button" id="uploadButton">Upload</button>
+        </form>
+
+        <!-- Table: Display Moments -->
+        <table class="moment-table" id="momenttable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add dynamic rows based on added moments -->
+                <tr>
+                    <td>Graduation Day</td>
+                    <td>June 2020</td>
+                    <td>A proud achievement!</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+				
+				<!-- Cat images fetch from API -->
+				<div>
+					<h2>My Cats</h2>
+					<div id="catimages">
+						
+					</div>
+				</div>
+    </main>
+	
+    <!-- Footer -->
+    <footer>
+        <p style="text-align:center;">Contact us: socialyearbook@example.com</p>
+    </footer>
+		<script type="text/javascript" src="add-moment.js"></script>
+
+</body>
+</html>
